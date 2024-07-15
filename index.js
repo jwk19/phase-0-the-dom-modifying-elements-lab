@@ -1,17 +1,20 @@
-// Write your code here!
-
-//create H1 element with variable newHeader
-const newheader = document.createElement(h1);
-//append the h1 to the body
-document.body.append(newheader);
-newheader.id = 'victory';
-
-//remove element with id='main'
-
 document.addEventListener("DOMContentLoaded", function() {
-    const mainElement = document.getElementById("main");
+    // Remove the element with id 'main'
+    var mainElement = document.getElementById("main");
     if (mainElement) {
       mainElement.remove();
     }
+    
+    // Create an H1 element with variable newHeader
+    const newHeader = document.createElement("h1");
+    
+    // Set the id of the newHeader
+    newHeader.id = 'victory';
+    
+    // Set the innerHTML of the newHeader
+    newHeader.innerHTML = "James Kahwai is the champion";
+    
+    // Append the h1 to the body
+    document.body.append(newHeader);
   });
   
